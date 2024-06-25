@@ -43,7 +43,7 @@ bevy = { version = "0.14.0-rc.2", default-features = false, features = [
   "bevy_gilrs",
 ] }
 # FIXME: remove this once https://github.com/bevyengine/bevy/pull/13740 is in a release
-bevy_ecs = { version = "0.14.0-rc.2", features = ["serde"] }
+bevy_ecs = { version = "0.14.0-rc.2" }
 # FIXME: remove this once bevy_egui is published
 bevy_egui = { git = "https://github.com/Friz64/bevy_egui/", branch = "bevy-0.14", optional = true }
 
