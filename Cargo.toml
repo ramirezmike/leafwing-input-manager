@@ -38,14 +38,14 @@ egui = ['dep:bevy_egui']
 
 [dependencies]
 leafwing_input_manager_macros = { path = "macros", version = "0.13" }
-bevy = { version = "0.14.0-rc.2", default-features = false, features = [
+bevy = { version = "0.14.0", default-features = false, features = [
   "serialize",
   "bevy_gilrs",
 ] }
 # FIXME: remove this once https://github.com/bevyengine/bevy/pull/13740 is in a release
-bevy_ecs = { version = "0.14.0-rc.2" }
+bevy_ecs = { version = "0.14.0" }
 # FIXME: remove this once bevy_egui is published
-bevy_egui = { git = "https://github.com/Friz64/bevy_egui/", branch = "bevy-0.14", optional = true }
+bevy_egui = { git = "https://github.com/ramirezmike/bevy_egui?rev=0a7d2bdf686f9f10570cecf61733118ddd736d52", branch = "bevy-0.14", optional = true }
 
 derive_more = { version = "0.99", default-features = false, features = [
   "display",
@@ -55,7 +55,7 @@ itertools = "0.12"
 serde = { version = "1.0", features = ["derive"] }
 
 [dev-dependencies]
-bevy = { version = "0.14.0-rc.2", default-features = false, features = [
+bevy = { version = "0.14.0", default-features = false, features = [
   "bevy_asset",
   "bevy_sprite",
   "bevy_text",
@@ -65,7 +65,7 @@ bevy = { version = "0.14.0-rc.2", default-features = false, features = [
   "x11",
   "bevy_state",
 ] }
-bevy_egui = { git = "https://github.com/Friz64/bevy_egui/", branch = "bevy-0.14" }
+bevy_egui = { git = "https://github.com/ramirezmike/bevy_egui?rev=0a7d2bdf686f9f10570cecf61733118ddd736d52", branch = "bevy-0.14" }
 serde_test = "1.0"
 criterion = "0.5"
 
